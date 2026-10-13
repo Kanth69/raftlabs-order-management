@@ -8,6 +8,7 @@ import { CartDrawer } from '@/components/CartDrawer';
 import { CheckoutModal } from '@/components/CheckoutModal';
 import { OrderTracker } from '@/components/OrderTracker';
 import { OrderHistoryModal } from '@/components/OrderHistoryModal';
+import { INITIAL_MENU_ITEMS } from '@/lib/store';
 import {
   Search,
   Sparkles,
@@ -21,10 +22,10 @@ import {
 const CATEGORIES = ['All', 'Pizzas', 'Burgers', 'Sides & Drinks', 'Desserts'] as const;
 
 export default function Home() {
-  const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
+  const [menuItems, setMenuItems] = useState<MenuItem[]>(INITIAL_MENU_ITEMS);
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [isLoadingMenu, setIsLoadingMenu] = useState<boolean>(true);
+  const [isLoadingMenu, setIsLoadingMenu] = useState<boolean>(false);
 
   // Modals & Tracking state
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
