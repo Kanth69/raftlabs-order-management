@@ -18,7 +18,7 @@
 - Gourmet menu featuring **Artisanal Pizzas**, **Smash Burgers**, **Sides & Drinks**, and **Desserts**.
 - Categorized navigation with real-time text search.
 - Each item includes:
-  - Name, Description, and Price ($ USD)
+  - Name, Description, and Price (₹ INR)
   - High-resolution photography
   - Category, Dietary badges (Veg / Non-Veg)
   - Chef prep time and customer rating
