@@ -74,7 +74,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     name: 'Parmesan Truffle Fries',
     description: 'Double-cooked crispy Idaho potato fries tossed in white truffle oil, grated aged Parmesan, parsley.',
     price: 149,
-    image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80',
     category: 'Sides & Drinks',
     isVegetarian: true,
     rating: 4.8,

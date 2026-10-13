@@ -100,6 +100,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
                       src={item.image}
                       alt={item.name}
                       className="w-16 h-16 rounded-xl object-cover border border-gray-100 shrink-0"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src =
+                          'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80';
+                      }}
                     />
 
                     <div className="flex-1 min-w-0">

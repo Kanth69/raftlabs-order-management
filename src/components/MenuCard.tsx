@@ -24,6 +24,10 @@ export const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
           alt={item.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src =
+              'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80';
+          }}
         />
         {/* Top Badges */}
         <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
