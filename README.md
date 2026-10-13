@@ -7,7 +7,7 @@
 
 ## 🌟 Live Demo & Repository
 - **Live Hosted Application**: [Deploy on Vercel](https://vercel.com) *(See deployment guide below)*
-- **GitHub Repository**: Public GitHub repository
+- **GitHub Repository**: [https://github.com/Kanth69/raftlabs-order-management](https://github.com/Kanth69/raftlabs-order-management)
 - **Loom Walkthrough Video**: 12–15 min video walkthrough *(See recording outline below)*
 
 ---

@@ -20,7 +20,7 @@ Below are the links to my code repository, live hosted application, and Loom vid
 ---
 
 ### 🔗 Project Links
-- **GitHub Repository**: `https://github.com/<your-username>/raftlabs-order-management`
+- **GitHub Repository**: `https://github.com/Kanth69/raftlabs-order-management`
 - **Hosted Application (Vercel)**: `https://<your-project>.vercel.app`
 - **Loom Video Walkthrough (12–15 mins)**: `https://www.loom.com/share/<your-video-id>`
 
