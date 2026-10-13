@@ -111,8 +111,8 @@ describe('OrderStore & Business Logic (TDD)', () => {
     expect(order.status).toBe('ORDER_RECEIVED');
     expect(order.items.length).toBe(2);
 
-    const expectedTotal = 14.99 * 2 + 6.99;
-    expect(order.totalAmount).toBe(Math.round(expectedTotal * 100) / 100);
+    const expectedTotal = 299 * 2 + 149;
+    expect(order.totalAmount).toBe(expectedTotal);
     expect(order.statusTimeline.length).toBe(1);
     expect(order.statusTimeline[0].status).toBe('ORDER_RECEIVED');
   });

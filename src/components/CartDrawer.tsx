@@ -22,8 +22,8 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
 
   if (!isCartOpen) return null;
 
-  const deliveryFee = 0.0; // Free delivery promotion
-  const tax = Math.round(totalAmount * 0.08 * 100) / 100;
+  const deliveryFee = 0; // Free delivery promotion
+  const tax = Math.round(totalAmount * 0.05 * 100) / 100;
   const finalTotal = Math.round((totalAmount + deliveryFee + tax) * 100) / 100;
 
   return (
@@ -107,9 +107,9 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
                         {item.name}
                       </h4>
                       <p className="text-xs font-extrabold text-orange-600 mt-0.5">
-                        ${(item.price * quantity).toFixed(2)}{' '}
+                        ₹{(item.price * quantity).toFixed(2)}{' '}
                         <span className="text-gray-400 font-normal">
-                          (${item.price.toFixed(2)} ea)
+                          (₹{item.price} ea)
                         </span>
                       </p>
 
@@ -154,11 +154,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
               <div className="space-y-1.5 text-xs text-gray-600">
                 <div className="flex justify-between">
                   <span>Subtotal</span>
-                  <span className="font-semibold text-gray-900">${totalAmount.toFixed(2)}</span>
+                  <span className="font-semibold text-gray-900">₹{totalAmount.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Estimated Tax (8%)</span>
-                  <span className="font-semibold text-gray-900">${tax.toFixed(2)}</span>
+                  <span>GST (5%)</span>
+                  <span className="font-semibold text-gray-900">₹{tax.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-emerald-600 font-medium">
                   <span>Delivery Fee</span>
@@ -166,7 +166,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
                 </div>
                 <div className="flex justify-between text-sm font-bold text-gray-900 pt-2 border-t border-gray-200">
                   <span>Total</span>
-                  <span className="text-base text-orange-600">${finalTotal.toFixed(2)}</span>
+                  <span className="text-base text-orange-600 font-extrabold">₹{finalTotal.toFixed(2)}</span>
                 </div>
               </div>
 

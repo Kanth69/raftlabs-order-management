@@ -330,7 +330,7 @@ export const OrderTracker: React.FC<OrderTrackerProps> = ({ orderId, onClose }) 
                         {item.quantity}x {item.name}
                       </span>
                       <span className="font-semibold text-gray-900">
-                        ${(item.price * item.quantity).toFixed(2)}
+                        ₹{(item.price * item.quantity).toFixed(2)}
                       </span>
                     </div>
                   ))}
@@ -338,7 +338,7 @@ export const OrderTracker: React.FC<OrderTrackerProps> = ({ orderId, onClose }) 
                 <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-gray-900">
                   <span>Grand Total:</span>
                   <span className="text-orange-600 font-extrabold text-sm">
-                    ${order.totalAmount.toFixed(2)}
+                    ₹{order.totalAmount.toFixed(2)}
                   </span>
                 </div>
               </div>

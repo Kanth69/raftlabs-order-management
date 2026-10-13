@@ -93,7 +93,7 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
                     </div>
 
                     <p className="text-xs text-gray-500">
-                      {ord.items.length} {ord.items.length === 1 ? 'item' : 'items'} • $
+                      {ord.items.length} {ord.items.length === 1 ? 'item' : 'items'} • ₹
                       {ord.totalAmount.toFixed(2)} • To: {ord.deliveryDetails.name}
                     </p>
                     <p className="text-[10px] text-gray-400">

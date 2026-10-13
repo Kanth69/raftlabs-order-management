@@ -80,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}
               {totalAmount > 0 && (
                 <span className="hidden md:inline font-bold border-l border-white/30 pl-2">
-                  ${totalAmount.toFixed(2)}
+                  ₹{totalAmount}
                 </span>
               )}
             </button>

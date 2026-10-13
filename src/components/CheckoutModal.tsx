@@ -100,7 +100,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     }
   };
 
-  const tax = Math.round(totalAmount * 0.08 * 100) / 100;
+  const tax = Math.round(totalAmount * 0.05 * 100) / 100;
   const grandTotal = Math.round((totalAmount + tax) * 100) / 100;
 
   return (
@@ -157,7 +157,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 <input
                   id="checkout-name"
                   type="text"
-                  placeholder="e.g. John Doe"
+                  placeholder="e.g. Rahul Sharma"
                   value={formData.name}
                   onChange={(e) => {
                     setFormData({ ...formData, name: e.target.value });
@@ -188,7 +188,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 <input
                   id="checkout-phone"
                   type="tel"
-                  placeholder="e.g. +1 555-0199 or 9876543210"
+                  placeholder="e.g. +91 98765 43210 or 9876543210"
                   value={formData.phone}
                   onChange={(e) => {
                     setFormData({ ...formData, phone: e.target.value });
@@ -219,7 +219,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 <textarea
                   id="checkout-address"
                   rows={2}
-                  placeholder="e.g. Apartment 4B, 742 Evergreen Terrace, Springfield"
+                  placeholder="e.g. Flat 402, Green Glen Layout, Bellandur, Bengaluru"
                   value={formData.address}
                   onChange={(e) => {
                     setFormData({ ...formData, address: e.target.value });
@@ -245,12 +245,12 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               </div>
               <div className="flex justify-between items-center text-xs font-semibold text-gray-700">
                 <span>Free Delivery:</span>
-                <span className="text-emerald-600 font-bold">$0.00</span>
+                <span className="text-emerald-600 font-bold">₹0</span>
               </div>
               <div className="flex justify-between items-center text-sm font-bold text-gray-900 pt-2 border-t border-orange-200/60">
                 <span>Total Due:</span>
                 <span className="text-base text-orange-600 font-extrabold">
-                  ${grandTotal.toFixed(2)}
+                  ₹{grandTotal.toFixed(2)}
                 </span>
               </div>
             </div>
@@ -270,7 +270,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 ) : (
                   <>
                     <ShieldCheck className="w-4 h-4" />
-                    <span>Confirm & Place Order (${grandTotal.toFixed(2)})</span>
+                    <span>Confirm & Place Order (₹{grandTotal.toFixed(2)})</span>
                   </>
                 )}
               </button>

@@ -11,7 +11,7 @@ const mockMenuItem: MenuItem = {
   id: 'menu-1',
   name: 'Artisan Margherita Pizza',
   description: 'San Marzano tomatoes, fresh buffalo mozzarella, fresh basil.',
-  price: 14.99,
+  price: 299,
   image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3',
   category: 'Pizzas',
   isVegetarian: true,
@@ -46,7 +46,7 @@ describe('UI Components (TDD)', () => {
         screen.getByText('San Marzano tomatoes, fresh buffalo mozzarella, fresh basil.')
       ).toBeInTheDocument();
       expect(screen.getByText('Pizzas')).toBeInTheDocument();
-      expect(screen.getByText('$14.99')).toBeInTheDocument();
+      expect(screen.getByText('₹299')).toBeInTheDocument();
       expect(screen.getByText('Veg')).toBeInTheDocument();
     });
 
